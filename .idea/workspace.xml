@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1029b7bc-237a-48ef-bbd3-21ea9df48b05" name="Changes" comment="">
+    <list default="true" id="1029b7bc-237a-48ef-bbd3-21ea9df48b05" name="Changes" comment="ok">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FinanceReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/FinanceReportTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Payment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StringProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StringProcessor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/StringProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/StringProcessorTest.java" afterDir="false" />
     </list>
@@ -20,8 +20,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -59,7 +59,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StringProcessorTest.testDeleteEverySecond">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="StringService" />
@@ -73,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringProcessorTest.exceptInclusion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StringService" />
       <extension name="coverage">
         <pattern>
@@ -83,8 +83,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.StringProcessorTest" />
-      <option name="METHOD_NAME" value="exceptInclusion" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,7 +104,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringProcessorTest.testInclusion" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringProcessorTest.testDeleteEverySecondEmptyStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StringService" />
       <extension name="coverage">
         <pattern>
@@ -115,13 +114,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.StringProcessorTest" />
-      <option name="METHOD_NAME" value="testInclusion" />
+      <option name="METHOD_NAME" value="testDeleteEverySecondEmptyStr" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringProcessorTest.testreplaceToWord" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="StringProcessorTest.testRTWWithNullStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StringService" />
       <extension name="coverage">
         <pattern>
@@ -131,7 +130,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
       <option name="MAIN_CLASS_NAME" value="org.example.StringProcessorTest" />
-      <option name="METHOD_NAME" value="testreplaceToWord" />
+      <option name="METHOD_NAME" value="testRTWWithNullStr" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -139,11 +138,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StringProcessorTest.testDeleteEverySecond" />
-        <item itemvalue="JUnit.StringProcessorTest.testreplaceToWord" />
-        <item itemvalue="JUnit.StringProcessorTest.exceptInclusion" />
-        <item itemvalue="JUnit.StringProcessorTest.testInclusion" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.StringProcessorTest.testDeleteEverySecondEmptyStr" />
+        <item itemvalue="JUnit.StringProcessorTest.testRTWWithNullStr" />
+        <item itemvalue="JUnit.StringProcessorTest" />
+        <item itemvalue="JUnit.StringProcessorTest.testDeleteEverySecond" />
       </list>
     </recent_temporary>
   </component>
@@ -156,8 +155,17 @@
       <option name="presentableId" value="Default" />
       <updated>1666681787661</updated>
       <workItem from="1666681791278" duration="8433000" />
-      <workItem from="1669748401759" duration="5234000" />
+      <workItem from="1669748401759" duration="6390000" />
+      <workItem from="1669791883326" duration="10517000" />
     </task>
+    <task id="LOCAL-00001" summary="ok">
+      <created>1669753742640</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669753742640</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,5 +181,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="ok" />
+    <option name="LAST_COMMIT_MESSAGE" value="ok" />
   </component>
 </project>

@@ -35,9 +35,32 @@ class StringProcessorTest {
     }
 
     @Test
-    void testReplaceToWord() {
+    void testReplaceToWord() throws Exception {
         String str = StringProcessor.replaceToWords("123");
         assertEquals("одиндватри", str);
+    }
+
+    @Test
+    void testRTWWithSymbols() throws Exception {
+        String str = StringProcessor.replaceToWords("1fhhr2!3");
+        assertEquals("одинfhhrдва!три", str);
+    }
+
+    @Test
+    void testRTWWithEmptyStr() throws Exception {
+        String str = StringProcessor.replaceToWords("");
+        assertEquals("", str);
+    }
+
+    @Test
+    void testRTWWithNullStr() throws Exception {
+        assertThrows(Exception.class, () -> StringProcessor.replaceToWords(null), "String is null");
+    }
+
+    @Test
+    void testRTWWithoutNumbers() throws Exception {
+        String str = StringProcessor.replaceToWords("abc!!");
+        assertEquals("abc!!", str);
     }
 
     @Test
@@ -46,6 +69,24 @@ class StringProcessorTest {
         StringBuilder stringBuilder = new StringBuilder("12223242");
         StringBuilder str = StringProcessor.deleteEverySecond(stringBuilder);
         assertEquals("1234", str.toString());
+        assertSame(str, stringBuilder);
+    }
+
+    @Test
+    void testDeleteEverySecondOddEl() {
+
+        StringBuilder stringBuilder = new StringBuilder("12345");
+        StringBuilder str = StringProcessor.deleteEverySecond(stringBuilder);
+        assertEquals("135", str.toString());
+        assertSame(str, stringBuilder);
+    }
+
+    @Test
+    void testDeleteEverySecondEmptyStr() {
+
+        StringBuilder stringBuilder = new StringBuilder("");
+        StringBuilder str = StringProcessor.deleteEverySecond(stringBuilder);
+        assertEquals("", str.toString());
         assertSame(str, stringBuilder);
     }
 }

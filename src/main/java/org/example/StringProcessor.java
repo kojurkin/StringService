@@ -19,7 +19,10 @@ public class StringProcessor {
         return (str.length() - str.replace(inclusion, "").length()) / inclusion.length();
     }
 
-    public static String replaceToWords(String str) {
+    public static String replaceToWords(String str) throws Exception {
+        if(str == null) {
+            throw new Exception("String is null");
+        }
         return str.replace("1", "один").replace("2", "два").replace("3", "три");
     }
 
