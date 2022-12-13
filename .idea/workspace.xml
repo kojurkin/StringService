@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1029b7bc-237a-48ef-bbd3-21ea9df48b05" name="Changes" comment="ok">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FinanceReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/FinanceReportTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/FinanceReportProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/FinanceReportProcessorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/FinanceReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/FinanceReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/StringProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/StringProcessor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/StringProcessorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/StringProcessorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/FinanceReportTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/FinanceReportTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +59,7 @@
       <recent name="org.example" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.FinanceReportProcessorTest.paymentsLessThanTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="StringService" />
@@ -73,7 +73,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringProcessorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FinanceReportProcessorTest.beginWithLetterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StringService" />
       <extension name="coverage">
         <pattern>
@@ -82,29 +82,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StringProcessorTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StringProcessorTest.testDeleteEverySecond" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="StringService" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StringProcessorTest" />
-      <option name="METHOD_NAME" value="testDeleteEverySecond" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FinanceReportProcessorTest" />
+      <option name="METHOD_NAME" value="beginWithLetterTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringProcessorTest.testDeleteEverySecondEmptyStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FinanceReportProcessorTest.paymentsLessThanTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StringService" />
       <extension name="coverage">
         <pattern>
@@ -113,14 +98,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StringProcessorTest" />
-      <option name="METHOD_NAME" value="testDeleteEverySecondEmptyStr" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FinanceReportProcessorTest" />
+      <option name="METHOD_NAME" value="paymentsLessThanTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringProcessorTest.testRTWWithNullStr" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FinanceReportTest.testReportCopy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="StringService" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +114,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example" />
-      <option name="MAIN_CLASS_NAME" value="org.example.StringProcessorTest" />
-      <option name="METHOD_NAME" value="testRTWWithNullStr" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FinanceReportTest" />
+      <option name="METHOD_NAME" value="testReportCopy" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FinanceReportTest.testReportToString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="StringService" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example" />
+      <option name="MAIN_CLASS_NAME" value="org.example.FinanceReportTest" />
+      <option name="METHOD_NAME" value="testReportToString" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -138,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FinanceReportProcessorTest.paymentsLessThanTest" />
+        <item itemvalue="JUnit.FinanceReportProcessorTest.beginWithLetterTest" />
+        <item itemvalue="JUnit.FinanceReportTest.testReportCopy" />
+        <item itemvalue="JUnit.FinanceReportTest.testReportToString" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.StringProcessorTest.testDeleteEverySecondEmptyStr" />
-        <item itemvalue="JUnit.StringProcessorTest.testRTWWithNullStr" />
-        <item itemvalue="JUnit.StringProcessorTest" />
-        <item itemvalue="JUnit.StringProcessorTest.testDeleteEverySecond" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +157,9 @@
       <updated>1666681787661</updated>
       <workItem from="1666681791278" duration="8433000" />
       <workItem from="1669748401759" duration="6390000" />
-      <workItem from="1669791883326" duration="10517000" />
+      <workItem from="1669791883326" duration="15602000" />
+      <workItem from="1670307414375" duration="521000" />
+      <workItem from="1670384276056" duration="13401000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1669753742640</created>
@@ -165,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669753742640</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="ok">
+      <created>1669908079195</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1669908079195</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,5 +195,29 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ok" />
     <option name="LAST_COMMIT_MESSAGE" value="ok" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/FinanceReportProcessorTest.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/FinanceReportProcessorTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/StringService$Main.ic" NAME="Main Coverage Results" MODIFIED="1669963941438" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/StringService$FinanceReportProcessorTest_beginWithLetterTest.ic" NAME="FinanceReportProcessorTest.beginWithLetterTest Coverage Results" MODIFIED="1670902320516" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>org.example.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -1,53 +1,86 @@
 package org.example;
 
 public class FinanceReport {
-    private static Payment[] paymentsArray;
-    private final String reporterName;
+    private int size;
+    private Payment[] paymentsArray;
+    private String reporterName;
 
-    private static class Date {
-        public static int day;
-        public static int month;
-        public static int year;
-    }
+    private int day;
+    private int month;
+    private int year;
 
-    public FinanceReport(String reporterName, int day, int month, int year) {
-        paymentsArray = new Payment[10]; // уточнить размер
+    public FinanceReport(String reporterName, int day, int month, int year, int size) {
+        this.size = size;
+        paymentsArray = new Payment[size]; // уточнить размер
         this.reporterName = reporterName;
-        Date.day = day;
-        Date.month = month;
-        Date.year = year;
+        this.day = day;
+        this.month = month;
+        this.year = year;
     }
 
-    public static int paymentsCount() {
-        return paymentsArray.length;
+    public int getSize() {
+        return this.size;
+    }
+
+    public int paymentsCount() {
+        int payCount = 0;
+        for (int i = 0; i < size; i++) {
+            if (paymentsArray[i] != null) {
+                payCount++;
+            }
+        }
+        return payCount;
     }
 
     public Payment getPaymentAt(int i) throws Exception {
-        if(i >= paymentsArray.length) {
+        if (i >= size || i < 0) {
             throw new Exception("Payment with this number does not exist");
         }
         return paymentsArray[i];
     }
 
+
     public void setPaymentAt(Payment newPayment, int i) throws Exception {
-        if (i >= paymentsArray.length) {
+        if (i >= size) {
             throw new Exception("Payment with this number does not exist");
         }
-        paymentsArray[i - 1] = newPayment;
+        paymentsArray[i] = newPayment;
     }
 
     public String toString() {
-        StringBuilder result = new StringBuilder("");
-        result.append("[Автор: ").append(reporterName).append(", дата: ").append(Date.day).append(".").append(Date.month).append(".").append(Date.year).append(", Платежи: [\n");
-        for(int i = 0; i < paymentsArray.length; i++) {
-            if(paymentsArray[i] != null) {
-                result.append("Плательщик: ").append(paymentsArray[i].getFullName()).append(", дата: ").append(paymentsArray[i].getDay()).append(".");
-                result.append(paymentsArray[i].getMonth()).append(".").append(paymentsArray[i].getYear()).append(", сумма: ").append(paymentsArray[i].getTotal() / 100);
-                result.append(" рублей ").append(paymentsArray[i].getTotal() % 100).append(" копеек.\n");
+        StringBuilder result = new StringBuilder();
+        result.append("[Автор: ").append(reporterName).append(", дата: ").append(this.day).append(".").append(this.month).append(".").append(this.year).append(", Платежи: [\n");
+        for (Payment payment : paymentsArray) {
+            if (payment != null) {
+                result.append("Плательщик: ").append(payment.getFullName()).append(", дата: ").append(payment.getDay()).append(".");
+                result.append(payment.getMonth()).append(".").append(payment.getYear()).append(", сумма: ").append(payment.getTotal() / 100);
+                result.append(" руб. ").append(payment.getTotal() % 100).append(" коп.\n");
             }
         }
         result.append("]]");
-        String finalResult = result.toString();
-        return finalResult;
+        return result.toString();
+    }
+
+    public void copy(FinanceReport start) throws Exception {
+        this.reporterName = start.reporterName;
+        this.day = start.day;
+        this.month = start.month;
+        this.year = start.year;
+        this.size = start.size;
+        this.paymentsArray = new Payment[size];
+        for (int i = 0; i < start.size; i++) {
+            Payment tmpPayment = start.getPaymentAt(i);
+            if (tmpPayment != null) {
+                this.setPaymentAt(tmpPayment, i);
+            }
+        }
+    }
+    public void nameCopy(FinanceReport start) throws Exception {
+        this.reporterName = start.reporterName;
+        this.day = start.day;
+        this.month = start.month;
+        this.year = start.year;
+        this.size = start.size;
+        this.paymentsArray = new Payment[size];
     }
 }
